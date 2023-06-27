@@ -1,0 +1,509 @@
+.container {
+    position: sticky;
+    top: 0;
+}
+
+
+.logo {
+    width: 70px;
+    float: right;
+    padding-right: 15%;
+}
+
+nav {
+    display: flex;
+    margin: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    flex-direction: row;
+    margin: 0;
+    padding: 25px;
+    position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: blue;
+    transition-delay: 0.5ms;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    width: 0;
+    transition: all ease-in-out 250ms;
+
+}
+
+nav a:hover::before {
+    width: 90%;
+}
+
+.search {
+    margin-left: 20px;
+    padding: 25px;
+}
+
+
+.container-home {
+    display: flex;
+    align-items: center;
+}
+
+.container-home img {
+    border: 6px solid darkgreen;
+    border-radius: 1em;
+    margin: 0;
+    padding: 0;
+}
+.software-programma img{
+    width: 15%;
+}
+.home-p{
+    flex: 1;
+    background-color: palegreen;
+    border :2px solid darkgreen;
+}
+.home-p-la{
+    flex: 1;
+}
+.home-p li{
+    list-style-type: none;
+}
+
+.home-p p {
+    color: darkgreen;
+    font-size: 1.5em;
+    font-family: monospace;
+}
+
+.home-p a {
+    text-decoration: none;
+    color: darkgreen;
+    font-size: 1.5em;
+    font-family: monospace;
+}
+
+.container-home h1 {
+    color: darkgreen;
+    font-size: 3em;
+    font-family: monospace;
+}
+
+.opleiding img {
+
+    border-radius: 1em;
+    border: 4px solid darkgreen
+}
+.jan {
+    display: flex;
+    gap: 4em;
+}
+.eduarte img {
+
+    border-radius: 1em;
+    border: 4px solid darkgreen
+}
+
+header {
+    background-color: black;
+}
+
+
+nav ul li a {
+    display: block;
+    padding: 0 15px;
+    margin: 0;
+}
+
+ul li ul li {
+    display: none;
+}
+
+ul li:hover ul li {
+    display: block;
+    transition: all ease-in-out 250ms;
+    background-color: rgba(0, 0, 0, 0.78);
+    padding-left: 1px;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 60px;
+    color: black;
+    z-index: 2;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-color: lightgrey;
+    margin: 0;
+}
+
+.hero-image {
+    background-image: url(../img/Techniek-gebouw.jpg);
+    background-size: cover;
+    height: 75vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: -1;
+}
+
+.hero-text h1 {
+    display: flex;
+    flex-direction: column;
+    align-self: end;
+    font-size: 2em;
+    color: black;
+}
+
+.locatie-background {
+    background-color: black;
+}
+
+.loacatie-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 6px inset darkgreen;
+    padding: 0;
+    margin: 0;
+}
+
+.locatie-img {
+    width: 23em;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 20px;
+    margin: 25px;
+}
+
+.loacatie-plus {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 4em;
+}
+
+.location-h1 {
+    font-size: 3em;
+    /*display: block;*/
+    position: relative;
+    /*bottom: 85px;*/
+    left: 325px;
+    color: white;
+}
+
+.locatie-p {
+    color: white;
+    position: relative;
+    left: 25px;
+    border: none;
+    padding: 0;
+    align-items: flex-end;
+}
+
+.contact-informatie {
+    border: 4px solid darkgreen;
+    border-radius: 4px;
+    padding: 0em 6em;
+
+}
+
+.contact-informatie p h1 {
+    font-size: 1em;
+}
+
+.social-contact {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-contact ul {
+    flex-direction: row;
+    margin-right: 4em;
+}
+
+.contact-informatie form {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    gap: 4px;
+    height: 4px;
+}
+
+.contact-informatie li a {
+    list-style-type: none;
+    text-decoration: none;
+    color: darkgreen;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    gap: 6em;
+    color: white;
+}
+
+.aanmelden {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    width: 35%;
+    padding: 2em;
+    border: 4px solid black;
+    border-radius: 4px;
+    background-color: darkgreen;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.lol h1 {
+    position: relative;
+    font-size: 2em;
+    margin: 6px;
+    margin-right: 4px;
+}
+
+.lol {
+    background-color: #444343;
+    border: 4px inset white;
+    border-radius: 1em;
+    margin: 20px;
+}
+
+.lol p {
+    font-size: 1.5em;
+    margin: 6px;
+    margin-right: 4px;
+}
+
+.about-me-body {
+    background-color: black;
+}
+
+.about-me- h1 {
+    color: white;
+}
+
+.about-me-T {
+    display: inline-block;
+    border-radius: 2em;
+    padding: 50px;
+    margin: 20px;
+
+}
+
+.about-me-T h1 {
+    font-size: 2em;
+    color: white;
+    margin-left: 3em;
+
+}
+
+.self {
+    position: relative;
+    left: 33%;
+
+    border: 4px inset gainsboro;
+    border-radius: 6em;
+    margin: 50px;
+}
+
+.about-me- table {
+    color: white;
+
+}
+
+tr:nth-child(even) {
+    background-color: #444343;
+}
+
+.about-me- {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/*.software-article {*/
+/*    border: 2px solid blue;*/
+/*    margin: 4em;*/
+/*}*/
+
+.software-article p {
+    font-size: 1.5em;
+    color: white;
+    font-family: monospace;
+}
+
+.software-article h1 {
+    color: white;
+    font-size: 4em;
+    font-family: monospace;
+}
+
+.software-programma p {
+    font-size: 1.5em;
+    color: white;
+    font-family: monospace;
+}
+
+
+.software-article {
+    padding: 1em;
+    display: flex;
+    gap: 6em;
+    border: 2px solid darkgreen;
+    margin: 4em;
+}
+
+.software-programma {
+    display: flex;
+    border: 2px solid darkgreen;
+    margin: 4em;
+    padding: 4em;
+}
+
+td, th {
+    border: 2px solid white;
+    text-align: left;
+    padding: 8px;
+}
+
+table {
+    font-family: Arial;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: lightgray;
+}
+
+
+.ouderavond {
+    position: relative;
+    left: 25%;
+    border: 6px solid darkgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    width: 50%;
+    height: 60%;
+    background-color: #009300;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+    z-index: -1;
+}
+
+.ouderavond h1 {
+    color: black;
+    font-size: 2em;
+    font-family: monospace;
+}
+
+.ouderavond p {
+    color: black;
+    font-size: 1.5em;
+    font-family: monospace;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+.boldtext {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+body {
+    background-color: black;
+}
+
+.info-p {
+    color: white;
+}
+
+.info-h1 {
+    color: white;
+}
+
+h1, p {
+    color: white;
+}
+
+.art img {
+    margin: 15px;
+    border: 4px solid darkgreen;
+    justify-content: center;
+}
+
+.iframe {
+    display: flex;
+    justify-content: center;
+}
+
+.kalender p {
+    padding: 2em;
+    margin: 2em;
+}
+
+.kalender {
+    position: relative;
+    left: 25%;
+    border: 6px solid darkgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    width: 50%;
+    height: 60%;
+    background-color: #009300;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+    z-index: -1;
+}
+.process{
+    font-size: 1.5em;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: blue;
+    }
+
+    h1 {
+        color: deeppink;
+    }
+
+    p {
+        color: deeppink;
+    }
+}
